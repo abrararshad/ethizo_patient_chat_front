@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  ethizo-chatbot-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ethizo-chatbot-frontend
+    volumes:
+      - ./app:/app
+    ports:
+      - 4500:3000
